@@ -17,7 +17,7 @@ print "[*] Audit Started"
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((ip, 80))
 client_socket.send(req1)
-boringResp = client_socket.recv(1024)
+Report = client_socket.recv(1024)
 if "Microsoft" not in Report:
                 print "[-] Not Vuln [-]"
                 exit(0)
